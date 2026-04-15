@@ -181,37 +181,37 @@ bucket_name = "acme-terraform-demo-bucket-xyf"
 ```
 **Deployment Commands**
 
-### 1. Initialize Terraform
-```bash
+## 1. Initialize Terraform
+```hcl
 terraform init
 ```
-### 2. Validate Configuration
-```bash
+## 2. Validate Configuration
+```hcl
 terraform validate
 ```
-### 3. Preview Changes
-```bash
+## 3. Preview Changes
+```hcl
 terraform plan
 ```
 
-### 3. Apply Configuration
-```bash
+## 3. Apply Configuration
+```hcl
 terraform apply
 
 - Type yes when prompted.
 ```
 
-### 4. Verify the S3 bucket was created
+## 4. Verify the S3 bucket was created
 You can verify the bucket by running a command in VS Code or Check in the AWS Management Console on S3 Dashboard
-```bash
+```hcl
 aws s3 ls 
 ```
-### 5. Cleanup (Destroy the Infrastructure)
+## 5. Cleanup (Destroy the Infrastructure)
 
  When you are finished with your practice session, you can clean up your resources so you won't get charged for running services.
 
 To remove all resources:
-```bash
+```hcl
 terraform destroy
 ```
 **Key Takeaways**
@@ -239,16 +239,14 @@ The CLI will prompt you for four pieces of information. If data already exists, 
 - To keep the existing data, press Enter; 
 - To overwrite it, type the new value.
 
-```hcl
-
-**Prompt**	                **What to enter**
-AWS Access Key ID	      Your 20-character alphanumeric ID.
-AWS Secret Access Key	  Your 40-character secret key.
-Default region name	      The region closest to you (e.g., us-east-1 or us-west-2).
-Default output format	  Leave blank
+| **Prompt**              | **What to enter**                          |
+|------------------------|--------------------------------------------|
+| AWS Access Key ID      | Your 20-character alphanumeric ID          |
+| AWS Secret Access Key  | Your 40-character secret key               |
+| Default region name    | Region closest to you (e.g., us-east-1)    |
+| Default output format  | Leave blank                                |
 ---
 
-```
 
 Author
 
