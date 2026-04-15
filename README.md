@@ -27,9 +27,12 @@ This project uses Terraform to deploy a secure Amazon S3 bucket with:
 
 **Make sure the following tools are installed:**
 
-- **VS Code** (recommended) - For help installing VS Code, see 👉 https://code.visualstudio.com/docs/setup/setup-overview
-- **Terraform** - For help installing Terraform, see 👉 https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
-- **AWS CLI** tool - For help installing AWS CLI, see 👉 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+- **VS Code** (recommended)
+    For help installing VS Code, see 👉 https://code.visualstudio.com/docs/setup/setup-overview
+- **Terraform**
+    For help installing Terraform, see 👉 https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+- **AWS CLI** tool
+    For help installing AWS CLI, see 👉 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 - **AWS Toolkit Extension**: Install the "AWS Toolkit" from the VS Code Extensions.
 - **AWS credentials configured** - For AWS setup, see 👉 [Configure AWS Credentials](#configure-aws-credentials)
 
