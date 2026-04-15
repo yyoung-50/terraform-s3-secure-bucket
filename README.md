@@ -83,7 +83,7 @@ terraform-s3-secure-bucket/
 - Install AWS CLI
 - Configure AWS credentials
 
-The configuration files have been created in a previous step, just copy the code and save the files.
+The configuration files have been created in a previous step, just copy the code and make sure to **save** each of the files.
 
 **Step 2** — Copy the code below to the **provider.tf**file.
 
