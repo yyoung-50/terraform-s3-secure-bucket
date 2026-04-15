@@ -181,32 +181,32 @@ bucket_name = "acme-terraform-demo-bucket-xyf"
 ```
 **Deployment Commands**
 
-## 1. Initialize Terraform
+# 1. Initialize Terraform
 ```hcl
 terraform init
 ```
-## 2. Validate Configuration
+# 2. Validate Configuration
 ```hcl
 terraform validate
 ```
-## 3. Preview Changes
+# 3. Preview Changes
 ```hcl
 terraform plan
 ```
 
-## 3. Apply Configuration
+# 4. Apply Configuration
 ```hcl
 terraform apply
 
 - Type yes when prompted.
 ```
 
-## 4. Verify the S3 bucket was created
+# 5. Verify the S3 bucket was created
 You can verify the bucket by running a command in VS Code or Check in the AWS Management Console on S3 Dashboard
 ```hcl
 aws s3 ls 
 ```
-## 5. Cleanup (Destroy the Infrastructure)
+# 6. Cleanup (Destroy the Infrastructure)
 
  When you are finished with your practice session, you can clean up your resources so you won't get charged for running services.
 
