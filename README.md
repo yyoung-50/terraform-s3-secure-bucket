@@ -20,7 +20,7 @@ This project uses Terraform to deploy a secure Amazon S3 bucket with:
 - **Tags** - for metadata and cost tracking
 
 ⚠️ Note: AWS enables encryption by default for new S3 buckets, but explicitly defining it in Terraform is a **best practice** because it makes your configuration declarative and clear.
-kkkkkkk
+
 ---
 
 ## ⚙️ Prerequisites
