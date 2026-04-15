@@ -220,6 +220,7 @@ In the AWS Management console, check for the following properties of the S3 buck
  When you are finished with your practice session, you can clean up your resources so you won't get charged for running services.
 
 To remove all resources:
+
 ```hcl
 terraform destroy
 ```
