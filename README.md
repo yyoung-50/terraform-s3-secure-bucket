@@ -174,7 +174,7 @@ output "bucket_arn" {
 
 ```hcl
 
-bucket_name = "yvonne-terraform-demo-bucket"
+bucket_name = "acme-terraform-demo-bucket-xyf"
 
 ⚠️ Use a globally unique bucket name
 
