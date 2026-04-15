@@ -85,7 +85,7 @@ terraform-s3-secure-bucket/
 
 The configuration files have been created in a previous step, just copy the code and save the files.
 
-**Step 2** — Copy the code below to **provider.tf**.
+**Step 2** — Copy the code below to the **provider.tf**file.
 
 ```hcl
 
@@ -105,7 +105,7 @@ provider "aws" {
 
 ```
 
-**Step 3** — Copy the code below to **variables.tf**
+**Step 3** — Copy the code below to the **variables.tf**file
 
 **Note:** For the region, select the region closest to you. In my case I selected **us-east-1**
 
@@ -123,7 +123,7 @@ variable "bucket_name" {
 }
 ```
 
-**Step 4** — Copy the code below to **main.tf**
+**Step 4** — Copy the code below to the **main.tf** file
 
 ```hcl
 
@@ -155,7 +155,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "encryption" {
 }
 ```
 
-**Step 5** — Copy the code below to **outputs.tf**
+**Step 5** — Copy the code below to the **outputs.tf** file
 
 ```hcl
 
@@ -170,7 +170,7 @@ output "bucket_arn" {
 }
 ```
 
-**Step 6** — Copy the code below to **terraform.tfvars**
+**Step 6** — Copy the code below to the **terraform.tfvars** file
 
 ```hcl
 
@@ -202,9 +202,18 @@ terraform apply
 ```
 
 ### 5. Verify the S3 bucket was created
-You can verify the bucket by running a command in VS Code or Check in the AWS Management Console on S3 Dashboard
+You can verify the bucket by running a command below in VS Code.  or Check in the AWS Management Console on S3 Dashboard
 ```hcl
 aws s3 ls 
+```
+
+### 5. Verify S3 bucket properties
+In the AWS Management console, check for the following properties of the S3 bucket:
+
+- **Versioning enabled** - Under bucket **Properties** Bucket Versioning is **enabled**
+- **Server-side encryption (AES-256)** - AWS enables encryption by default for new S3 buckets. It was defined explicitly in Terraform as a practice exercise.
+- **Tags** - Under bucket **Properties** in the **Tags** section you will see bucket tags configured in the **main.tf** file
+
 ```
 ### 6. Cleanup (Destroy the Infrastructure)
 
@@ -229,8 +238,8 @@ Here is a link to video samples of Terraform hands-on labs from my cloud course:
 
 ## Configure AWS Credentials
 
-- Create an IAM user account
-- Setup an **Access Key ID** and **Secret Access Key** in the AWS Management Console. Make sure the user has permissions to create an S3 bucket.
+- Create an IAM user account. Make sure the user has permissions to create an S3 bucket. 
+- Setup an **Access Key ID** and **Secret Access Key** in the AWS Management Console. 
 
 To link your AWS account, open the terminal in VS Code and type **aws configure**
 
